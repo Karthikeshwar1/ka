@@ -5,8 +5,13 @@ let particle;
 let xoff = 0;
 let yoff = 10000;
 
+function preload() {
+    f = loadFont('./resources/fonts/Staatliches-Regular.ttf');
+}
+
+
 function setup() {
-    createCanvas(1500, 735);
+    createCanvas(1520, 730);
     // for (let i = 0; i < 5; i++) {
     //     let x1 = random(width);
     //     let x2 = random(width);
@@ -67,6 +72,30 @@ function setup() {
     particle = new Particle();
     // particle1 = new Particle();
     noCursor();
+
+
+    let home_button = createA('./index.html', 'HOME');
+    home_button.position(1300, 70);
+    home_button.style('color', '#1f1f1f')
+    home_button.style('font-size', '46px');
+    home_button.style('text-decoration', 'none');
+    home_button.style('font-family', 'Staatliches-Regular');
+
+    let works_button = createA('./projects.html', 'PROJECTS');
+    works_button.position(1300, 130);
+    works_button.style('color', '#1f1f1f')
+    works_button.style('font-size', '46px');
+    works_button.style('text-decoration', 'none');
+    works_button.style('font-family', 'Staatliches-Regular');
+
+    let bio_button = createA('./bio.html', 'BIO');
+    bio_button.position(1300, 190);
+    bio_button.style('color', '#1f1f1f')
+    bio_button.style('font-size', '46px');
+    bio_button.style('text-decoration', 'none');
+    bio_button.style('font-family', 'Staatliches-Regular');
+
+    // p.style('font-family' "Qahiri");
 }
 
 function draw() {
@@ -77,8 +106,9 @@ function draw() {
     }
     // particle.update(noise(xoff) * width, noise(yoff) * height);
     particle.update(mouseX, mouseY);
-    particle.show();
+
     particle.look(walls);
+    particle.show();
 
     // particle1.update(noise(xoff) * width, noise(yoff) * height);
     // particle1.update(mouseX, mouseY);
