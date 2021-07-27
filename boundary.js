@@ -1,12 +1,1 @@
-class Boundary {
-    constructor(x1, y1, x2, y2) {
-        this.a = createVector(x1, y1);
-        this.b = createVector(x2, y2);
-    }
-
-    show() {
-        stroke(255);
-        strokeWeight(5);
-        line(this.a.x, this.a.y, this.b.x, this.b.y);
-    }
-}
+var _0x43e3=['16735vNfHJl','746091EQNGgW','1231ykEoRT','28PGNqjZ','917IHfXTK','20908ZBLfiu','361077RhMXhw','88729UappCC','150312wKNOsB','31cCGvvQ','79tBpgun','stroke_weight'];function _0x32c9(_0x1a7d71,_0x192e10){return _0x32c9=function(_0x43e30b,_0x32c906){_0x43e30b=_0x43e30b-0xa6;var _0x3d0257=_0x43e3[_0x43e30b];return _0x3d0257;},_0x32c9(_0x1a7d71,_0x192e10);}(function(_0x2d3747,_0x4da2e1){var _0x4f3b89=_0x32c9;while(!![]){try{var _0x40cc7b=parseInt(_0x4f3b89(0xa9))*-parseInt(_0x4f3b89(0xa7))+-parseInt(_0x4f3b89(0xab))+parseInt(_0x4f3b89(0xa6))+parseInt(_0x4f3b89(0xae))*parseInt(_0x4f3b89(0xaa))+-parseInt(_0x4f3b89(0xaf))*parseInt(_0x4f3b89(0xb1))+-parseInt(_0x4f3b89(0xad))+parseInt(_0x4f3b89(0xa8))*parseInt(_0x4f3b89(0xac));if(_0x40cc7b===_0x4da2e1)break;else _0x2d3747['push'](_0x2d3747['shift']());}catch(_0x2f67ed){_0x2d3747['push'](_0x2d3747['shift']());}}}(_0x43e3,0xdfb92));class Boundary{constructor(_0x47d95f,_0x4b1129,_0x3256bd,_0x485591,_0x5c26a2=0x7){var _0x106f99=_0x32c9;this['a']=createVector(_0x47d95f,_0x4b1129),this['b']=createVector(_0x3256bd,_0x485591),this[_0x106f99(0xb0)]=_0x5c26a2;}['show'](){stroke(0xff),strokeWeight(this['stroke_weight']),line(this['a']['x'],this['a']['y'],this['b']['x'],this['b']['y']);}}
